@@ -1,5 +1,12 @@
+// IMPORTS
+import { AppRouter } from "./routers/AppRouter";
+
 function App() {
-  return <h5>INCIDENTOR PORTAL</h5>;
+  return (
+    <>
+      <AppRouter />
+    </>
+  );
 }
 
 export default App;

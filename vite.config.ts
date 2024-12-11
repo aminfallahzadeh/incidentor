@@ -6,7 +6,7 @@ import { resolve } from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/incidentor/",
+  base: "/incidentor",
   css: {
     preprocessorOptions: {
       scss: {
@@ -18,6 +18,7 @@ export default defineConfig({
     alias: {
       "@": resolve(__dirname, "src"),
       "@images": resolve(__dirname, "src/assets/images"),
+      "@fonts": resolve(__dirname, "src/assets/fonts"),
     },
   },
 });
