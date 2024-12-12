@@ -1,1 +1,0 @@
-import{j as e}from"./index-DkfJqz1E.js";const t=()=>e.jsx("div",{className:"w-full bg-secondary flex items-center justify-center py-3",children:e.jsx("h1",{className:"text-2xl",children:"کارتابل"})});export{t as default};
