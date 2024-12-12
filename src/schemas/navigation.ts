@@ -1,7 +1,7 @@
 // IMPORTS
 import { NavigationItem } from "@/shared/types/navigation";
 
-export const plansSchema: NavigationItem[] = [
+const afterAreasList = [
   {
     id: 1000,
     name: "ایمنی عرصه‌های عمومی",
@@ -1170,4 +1170,20 @@ export const plansSchema: NavigationItem[] = [
       },
     ],
   },
+];
+export const plansSchema: NavigationItem[] = [
+  { id: 100, bullet: true, name: "منطقه ۱", children: afterAreasList },
+  { id: 101, bullet: true, name: "منطقه ۲", children: afterAreasList },
+  { id: 102, bullet: true, name: "منطقه ۳", children: afterAreasList },
+  { id: 103, bullet: true, name: "منطقه ۴", children: afterAreasList },
+  { id: 104, bullet: true, name: "منطقه ۵", children: afterAreasList },
+  { id: 105, bullet: true, name: "منطقه ۶", children: afterAreasList },
+  { id: 106, bullet: true, name: "منطقه ۷", children: afterAreasList },
+  { id: 107, bullet: true, name: "منطقه ۸", children: afterAreasList },
+  { id: 108, bullet: true, name: "منطقه ۹", children: afterAreasList },
+  { id: 109, bullet: true, name: "منطقه ۱۰", children: afterAreasList },
+  { id: 110, bullet: true, name: "منطقه ۱۱", children: afterAreasList },
+  { id: 111, bullet: true, name: "منطقه ۱۲", children: afterAreasList },
+  { id: 112, bullet: true, name: "منطقه ۱۳", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۴", children: afterAreasList },
 ];
