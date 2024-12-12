@@ -837,13 +837,6 @@ const afterAreasList = [
           },
         ],
       },
-    ],
-  },
-  {
-    id: 1004,
-    bullet: true,
-    name: "ایمن سازی ساختمان های موجود",
-    children: [
       {
         id: 2008,
         bullet: true,
@@ -956,13 +949,6 @@ const afterAreasList = [
           },
         ],
       },
-    ],
-  },
-  {
-    id: 1005,
-    bullet: true,
-    name: "ایمن سازی ساختمان های موجود",
-    children: [
       {
         id: 2009,
         bullet: true,
@@ -1186,4 +1172,12 @@ export const plansSchema: NavigationItem[] = [
   { id: 111, bullet: true, name: "منطقه ۱۲", children: afterAreasList },
   { id: 112, bullet: true, name: "منطقه ۱۳", children: afterAreasList },
   { id: 113, bullet: true, name: "منطقه ۱۴", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۵", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۶", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۷", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۸", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۱۹", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۲۰", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۲۱", children: afterAreasList },
+  { id: 113, bullet: true, name: "منطقه ۲۲", children: afterAreasList },
 ];

@@ -95,6 +95,11 @@
                 padding: 8px 15px;
                 background-color: var(--color-primary);
                 width: auto;
+
+                // max-height: 300px;
+                // overflow-y: auto;
+                // scrollbar-width: thin;
+                // scrollbar-color: var(--color-secondary) var(--color-primary);
             }
         }
     }

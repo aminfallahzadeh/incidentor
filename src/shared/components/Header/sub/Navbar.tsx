@@ -59,7 +59,7 @@ export const Navbar = () => {
               //   ref={(el) => el && panelRefs.current.set(item.id, el)}
               className="nav__item-panel"
             >
-              <ul className="nav__item-panel--list">
+              <ul className="nav__item-panel--list border-2 border-blue-500">
                 {navigationRenderer(item.children)}
               </ul>
             </div>
