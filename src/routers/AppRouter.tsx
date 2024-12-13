@@ -12,19 +12,13 @@ import { AppRoute } from "@/shared/types/route";
 
 const renderRoutes = (routes: AppRoute[]) =>
   routes.map((route) => {
-    if (!route.path) {
+    if (!route.path && route.children) {
       return (
         <Route key={route.id} element={route.element}>
-          {route.children && renderRoutes(route.children)}
+          {renderRoutes(route.children)}
         </Route>
       );
     }
-    if (route.index) {
-      return (
-        <Route key={route.id} index path={route.path} element={route.element} />
-      );
-    }
-
     return (
       <Route key={route.id} path={route.path} element={route.element}>
         {route.children && renderRoutes(route.children)}

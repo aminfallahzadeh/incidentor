@@ -1,1 +1,7 @@
-export const SuspenseFallback = () => <h1>Loading...</h1>;
+export const SuspenseFallback = () => {
+  return (
+    <div>
+      <h1 className="justify-center items-center text-lg">Loading...</h1>
+    </div>
+  );
+};

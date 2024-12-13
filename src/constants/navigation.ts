@@ -8,6 +8,7 @@ const renderPlansPanel = (data: NavigationItem[]): NavigationItem[] => {
     id: item.id,
     name: item.name,
     bullet: item.bullet,
+    link: item.link,
     children: item.children ? renderPlansPanel(item.children) : undefined,
   }));
 };

@@ -7,34 +7,6 @@ import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import CircleRoundedIcon from "@mui/icons-material/CircleRounded";
 
 export const Navbar = () => {
-  //   const panelRefs = useRef(new Map<number, HTMLDivElement>());
-
-  // Check and add the "-responsive" class based on position
-  //   const checkAndSetResponsiveClass = () => {
-  //     panelRefs.current.forEach((panel) => {
-  //       if (!panel) return;
-
-  //       const rect = panel.getBoundingClientRect();
-  //       const screenPadding = 10; // Avoid edge overlap
-
-  //       if (rect.right > window.innerWidth - screenPadding) {
-  //         panel.classList.add("panel-responsive");
-  //       } else if (rect.left < screenPadding) {
-  //         panel.classList.add("panel-responsive");
-  //       } else {
-  //         panel.classList.remove("panel-responsive");
-  //       }
-  //     });
-  //   };
-
-  //   useEffect(() => {
-  //     checkAndSetResponsiveClass();
-  //     window.addEventListener("resize", checkAndSetResponsiveClass);
-  //     return () => {
-  //       window.removeEventListener("resize", checkAndSetResponsiveClass);
-  //     };
-  //   }, []);
-
   const navigationRenderer = (items: NavigationItem[]) => {
     return items.map((item) => {
       if (item.children) {
@@ -55,10 +27,7 @@ export const Navbar = () => {
               )}
             </div>
 
-            <div
-              //   ref={(el) => el && panelRefs.current.set(item.id, el)}
-              className="nav__item-panel"
-            >
+            <div className="nav__item-panel">
               <ul className="nav__item-panel--list border-2 border-blue-500">
                 {navigationRenderer(item.children)}
               </ul>

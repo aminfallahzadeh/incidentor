@@ -23,6 +23,7 @@ const afterAreasList = [
                 id: 4000,
                 bullet: true,
                 name: "بازرسی از بوستان، لچکی و رفیوژ و احصا عدم انطباق توسط اداره HSE",
+                link: "/incidentor/test",
               },
               {
                 id: 4001,
@@ -1170,14 +1171,5 @@ export const plansSchema: NavigationItem[] = [
   { id: 109, bullet: true, name: "منطقه ۱۰", children: afterAreasList },
   { id: 110, bullet: true, name: "منطقه ۱۱", children: afterAreasList },
   { id: 111, bullet: true, name: "منطقه ۱۲", children: afterAreasList },
-  { id: 112, bullet: true, name: "منطقه ۱۳", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۴", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۵", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۶", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۷", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۸", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۱۹", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۲۰", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۲۱", children: afterAreasList },
-  { id: 113, bullet: true, name: "منطقه ۲۲", children: afterAreasList },
+  { id: 112, bullet: true, name: "......" },
 ];
