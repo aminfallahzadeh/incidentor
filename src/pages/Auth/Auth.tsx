@@ -1,10 +1,16 @@
 // IMPORTS
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Auth = () => {
-  return (
-    <div className="w-full bg-secondary flex items-center justify-center py-3">
-      <h1 className="text-2xl">کارتابل</h1>
-    </div>
-  );
+  // CONSTS
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/incidentor/home");
+  }, [navigate]);
+
+  return <div>Login</div>;
 };
 
 export default Auth;

@@ -1,7 +1,8 @@
 // IMPORTS
+import { Cartable } from "@/screens/Cartable";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <Cartable />;
 };
 
 export default Home;

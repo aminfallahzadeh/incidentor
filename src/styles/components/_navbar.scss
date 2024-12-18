@@ -57,7 +57,7 @@
             &:hover > .nav__item-panel {
                 opacity: 1;
                 visibility: visible;
-                z-index: 1;
+                z-index: 999;
                 display: flex;
                 transform: perspective(1px) scale(1);
             }

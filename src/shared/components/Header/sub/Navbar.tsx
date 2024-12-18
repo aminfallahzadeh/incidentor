@@ -1,7 +1,6 @@
 // IMPORTS
-// import { useEffect, useRef } from "react";
 import { NavigationItem } from "@/shared/types/navigation";
-import { navigationItems } from "@/constants/navigation";
+import { mainNavItems } from "@/data/navigation/main";
 import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import CircleRoundedIcon from "@mui/icons-material/CircleRounded";
@@ -50,5 +49,5 @@ export const Navbar = () => {
       }
     });
   };
-  return <ul className="nav">{navigationRenderer(navigationItems)}</ul>;
+  return <ul className="nav">{navigationRenderer(mainNavItems)}</ul>;
 };

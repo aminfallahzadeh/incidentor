@@ -1,9 +1,9 @@
 // IMPORTS
 import { Logo } from "@/shared/components/SVG/Logo";
 import { Navbar } from "./sub";
-import ExitIcon from "@mui/icons-material/LogoutRounded";
 import { IconButton } from "@mui/material";
 import { MAIN_TITLE } from "@/constants/consts";
+import LogoutIcon from "@mui/icons-material/LogoutRounded";
 
 export const Header = () => {
   const content = (
@@ -27,7 +27,7 @@ export const Header = () => {
 
         <div className="header__info--logout">
           <IconButton sx={{ color: "#fff" }}>
-            <ExitIcon
+            <LogoutIcon
               sx={{
                 transform: "rotate(180deg)",
                 color: "#fff",
