@@ -3,8 +3,10 @@ import { Logo } from "../SVG/Logo";
 
 export const SuspenseFallback = () => {
   return (
-    <div>
-      <h1 className="justify-center items-center text-lg">Loading...</h1>
+    <div className="flex flex-col justify-center items-center h-screen absolute w-full top-0 left-0 bottom-0">
+      <div className="logo-loader">
+        <Logo color="#e4f0ff" />
+      </div>
     </div>
   );
 };
