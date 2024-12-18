@@ -113,24 +113,34 @@ export const DataGrid = <T extends MRT_RowData>({
       },
     }),
     muiTableBodyProps: {
-      sx: (theme) => ({
+      sx: {
         '& tr:nth-of-type(odd):not([data-selected="true"]):not([data-pinned="true"]) > td':
           {
             backgroundColor: baseBackgroundColor,
           },
-        // '& tr:nth-of-type(odd):not([data-selected="true"]):not([data-pinned="true"]):hover > td':
-        //   {
-        //     backgroundColor: darken(baseBackgroundColor, 0.2),
-        //   },
-        // '& tr:nth-of-type(even):not([data-selected="true"]):not([data-pinned="true"]) > td':
-        //   {
-        //     backgroundColor: lighten(baseBackgroundColor, 0.1),
-        //   },
         '& tr:nth-of-type(even):not([data-selected="true"]):not([data-pinned="true"]):hover > td':
           {
             backgroundColor: hoverColor,
           },
-      }),
+      },
+      //   sx: (theme) => ({
+      //     '& tr:nth-of-type(odd):not([data-selected="true"]):not([data-pinned="true"]) > td':
+      //       {
+      //         backgroundColor: baseBackgroundColor,
+      //       },
+      //     // '& tr:nth-of-type(odd):not([data-selected="true"]):not([data-pinned="true"]):hover > td':
+      //     //   {
+      //     //     backgroundColor: darken(baseBackgroundColor, 0.2),
+      //     //   },
+      //     // '& tr:nth-of-type(even):not([data-selected="true"]):not([data-pinned="true"]) > td':
+      //     //   {
+      //     //     backgroundColor: lighten(baseBackgroundColor, 0.1),
+      //     //   },
+      //     '& tr:nth-of-type(even):not([data-selected="true"]):not([data-pinned="true"]):hover > td':
+      //       {
+      //         backgroundColor: hoverColor,
+      //       },
+      //   }),
     },
     muiTablePaperProps: {
       elevation: 0,

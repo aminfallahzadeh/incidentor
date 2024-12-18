@@ -1,3 +1,6 @@
+// IMPORTS
+import { Logo } from "../SVG/Logo";
+
 export const SuspenseFallback = () => {
   return (
     <div>
