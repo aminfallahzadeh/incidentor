@@ -1,0 +1,1 @@
+import{j as t,d as s}from"./index-B289NbHG.js";import{T as e}from"./Title-ClmQaosO.js";const o=()=>t.jsxs(t.Fragment,{children:[t.jsx(e.Primary,{title:s,back:!0,home:!1}),t.jsx("section",{className:"main"})]});export{o as default};
