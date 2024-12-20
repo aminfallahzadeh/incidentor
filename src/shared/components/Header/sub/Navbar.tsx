@@ -1,9 +1,11 @@
 // IMPORTS
 import { NavigationItem } from "@/shared/types/navigation";
+import { Link } from "react-router-dom";
 import { mainNavItems } from "@/data/navigation/main";
 import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
 import ChevronLeftRoundedIcon from "@mui/icons-material/ChevronLeftRounded";
 import CircleRoundedIcon from "@mui/icons-material/CircleRounded";
+import { BASE_URL } from "@/constants/urls";
 
 export const Navbar = () => {
   const navigationRenderer = (items: NavigationItem[]) => {
@@ -36,14 +38,17 @@ export const Navbar = () => {
       } else {
         return (
           <li key={item.id} className="nav__item">
-            <a href={item.link}>
+            <Link
+              to={item.link ? item.link : "/"}
+              replace={item.link === BASE_URL ? true : false}
+            >
               <div className="nav__item-title">
                 {item.bullet && <CircleRoundedIcon sx={{ fontSize: "12px" }} />}
                 <span className={item.bullet ? "nav__item-title--wrap" : ""}>
                   {item.name}
                 </span>
               </div>
-            </a>
+            </Link>
           </li>
         );
       }

@@ -3,6 +3,7 @@ import { NavigationItem } from "@/shared/types/navigation";
 import { CARTABLE, PLANS, REPORTS, MAP, BASE_INFO } from "@/constants/consts";
 import { BASE_URL, PLANS_URL } from "@/constants/urls";
 import { baseInfoItems } from "./base-info";
+// import { plansSchema } from "../plans";
 
 const renderSubPanels = (data: NavigationItem[]): NavigationItem[] => {
   return data.map((item) => ({
@@ -26,6 +27,7 @@ export const mainNavItems: NavigationItem[] = [
     name: PLANS,
     main: true,
     link: PLANS_URL,
+    // children: renderSubPanels(plansSchema),
   },
   {
     id: 3,

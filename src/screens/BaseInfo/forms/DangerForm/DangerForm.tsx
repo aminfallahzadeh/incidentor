@@ -1,11 +1,11 @@
 // IMPORTS
 import { useForm, FieldValues } from "react-hook-form";
 import { FormGroup } from "@/shared/components/FormGroup";
-import { plansFormSchema } from "@/schemas/base-info/plans.schema";
+import { dangerFormSchema } from "@/schemas/base-info/danger.schema";
+import { SAVE } from "@/constants/consts";
 import { LoadingButton } from "@mui/lab";
-import { UPLOAD_EXCEL, SAVE } from "@/constants/consts";
 
-export const PlansForm = () => {
+export const DangerForm = () => {
   // STATES
   // CONSTS
   const { control, handleSubmit } = useForm<FieldValues>();
@@ -15,7 +15,7 @@ export const PlansForm = () => {
     console.log(data);
   };
 
-  const structure = plansFormSchema();
+  const structure = dangerFormSchema();
 
   const content = (
     <section className="flex-col">
@@ -30,10 +30,6 @@ export const PlansForm = () => {
 
         {/* Submit Section */}
         <div className="flex flex-row mr-auto gap-x-2">
-          <LoadingButton dir="ltr" variant="contained" color="warning">
-            <span>{UPLOAD_EXCEL}</span>
-          </LoadingButton>
-
           <LoadingButton
             dir="ltr"
             variant="contained"
@@ -46,5 +42,6 @@ export const PlansForm = () => {
       </form>
     </section>
   );
+
   return content;
 };
