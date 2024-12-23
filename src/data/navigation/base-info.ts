@@ -1,5 +1,6 @@
 // IMPORTS
 import { NavigationItem } from "@/shared/types/navigation";
+import { BASE_INFO_URL } from "@/constants/urls";
 import {
   PLANS,
   ACTION_AREA,
@@ -10,8 +11,8 @@ import {
   SUB_ACTIVITY,
   COMPLICATIONS,
   EXECUTIVES,
+  MUNICIPALITY_REGIONS,
 } from "@/constants/consts";
-import { BASE_INFO_URL } from "@/constants/urls";
 
 export const baseInfoItems: NavigationItem[] = [
   {
@@ -66,6 +67,12 @@ export const baseInfoItems: NavigationItem[] = [
     id: 900,
     name: EXECUTIVES,
     link: `${BASE_INFO_URL}?tab=executives&title=${EXECUTIVES}`,
+    bullet: true,
+  },
+  {
+    id: 901,
+    name: MUNICIPALITY_REGIONS,
+    link: `${BASE_INFO_URL}?tab=municipality-regions&title=${MUNICIPALITY_REGIONS}`,
     bullet: true,
   },
 ];

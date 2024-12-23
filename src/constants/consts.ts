@@ -14,6 +14,7 @@ export const ACTIVITY = "فعالیت";
 export const SUB_ACTIVITY = "زیر فعالیت";
 export const COMPLICATIONS = "عوارض";
 export const EXECUTIVES = "مجریان";
+export const MUNICIPALITY_REGIONS = "مناطق شهرداری";
 
 // FIELDS
 export const ROW_NO = "ردیف";
@@ -37,6 +38,7 @@ export const SCORE = "امتیاز";
 export const SUB_ACTIVITY_TITLE = "عنوان زیر فعالیت";
 export const COMPLICATION_TITLE = "عنوان عارضه";
 export const EXECUTIVE_TITLE = "عنوان مجری";
+export const REGION_TITLE = "عنوان منطقه";
 
 // BUTTONS
 export const OBSERVE = "مشاهده";

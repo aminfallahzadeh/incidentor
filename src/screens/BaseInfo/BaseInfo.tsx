@@ -20,6 +20,8 @@ import { ComplicationsForm } from "./forms/ComplicationsForm";
 import { ComplicationsGrid } from "./grids/ComplicationsGrid";
 import { ExecutivesForm } from "./forms/ExecutivesForm";
 import { ExecutivesGrid } from "./grids/ExecutivesGrid";
+import { MunicipalityRegionsFrom } from "./forms/MunicipalityRegionsFrom";
+import { MunicipalityRegionsGrid } from "./grids/MunicipalityRegionsGrid";
 
 const BaseInfo = () => {
   // STATES
@@ -39,6 +41,8 @@ const BaseInfo = () => {
             <PlansGrid />
           </>
         );
+        break;
+
       case "operational-domain":
         return (
           <>
@@ -46,6 +50,8 @@ const BaseInfo = () => {
             <OperationalDomainGrid />
           </>
         );
+        break;
+
       case "targets":
         return (
           <>
@@ -53,6 +59,8 @@ const BaseInfo = () => {
             <TargetsGrid />
           </>
         );
+        break;
+
       case "danger":
         return (
           <>
@@ -60,6 +68,8 @@ const BaseInfo = () => {
             <DangerGrid />
           </>
         );
+        break;
+
       case "action":
         return (
           <>
@@ -67,6 +77,8 @@ const BaseInfo = () => {
             <ActionGrid />
           </>
         );
+        break;
+
       case "activity":
         return (
           <>
@@ -74,6 +86,8 @@ const BaseInfo = () => {
             <ActivityGrid />
           </>
         );
+        break;
+
       case "sub-activity":
         return (
           <>
@@ -81,6 +95,8 @@ const BaseInfo = () => {
             <SubActivityGrid />
           </>
         );
+        break;
+
       case "complications":
         return (
           <>
@@ -88,6 +104,8 @@ const BaseInfo = () => {
             <ComplicationsGrid />
           </>
         );
+        break;
+
       case "executives":
         return (
           <>
@@ -95,6 +113,17 @@ const BaseInfo = () => {
             <ExecutivesGrid />
           </>
         );
+        break;
+
+      case "municipality-regions":
+        return (
+          <>
+            <MunicipalityRegionsFrom />
+            <MunicipalityRegionsGrid />
+          </>
+        );
+        break;
+
       default:
         return null;
     }
