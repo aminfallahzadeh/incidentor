@@ -1,11 +1,12 @@
 // IMPORTS
 import { NavigationItem } from "@/shared/types/navigation";
 
-const afterAreasList = [
+export const afterAreasList = [
   {
     id: 1000,
     name: "ایمنی عرصه‌های عمومی",
     bullet: true,
+    main: true,
     children: [
       {
         id: 2000,
@@ -293,6 +294,7 @@ const afterAreasList = [
   {
     id: 1001,
     bullet: true,
+    main: true,
     name: "ایمن سازی ساختمان های تحت مالکیت شهرداری",
     children: [
       {
@@ -446,6 +448,7 @@ const afterAreasList = [
   {
     id: 1002,
     bullet: true,
+    main: true,
     name: "ارتقاء سطح آمادگی و توانمندی مواجهه با شرایط اضطراری",
     children: [
       {
@@ -751,6 +754,7 @@ const afterAreasList = [
   {
     id: 1003,
     bullet: true,
+    main: true,
     name: "ایمن سازی ساختمان های موجود",
     children: [
       {

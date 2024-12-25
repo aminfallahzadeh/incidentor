@@ -1,22 +1,27 @@
 // IMPORTS
-import { ROW_NO, FIELD_ID, REGION_TITLE } from "@/constants/consts";
+import { ROW_NO, FIELD_ID, REGION_TITLE, WEIGHT } from "@/constants/consts";
 
 export const municipalityRegionsColumns = () => [
   {
-    accessorKey: "regionsRowNo",
+    accessorKey: "municipalityRegionsRowNo",
     header: ROW_NO,
     size: 20,
     enableSorting: false,
     enableColumnActions: false,
   },
   {
-    accessorKey: "regionsID",
+    accessorKey: "municipalityRegionsID",
     header: FIELD_ID,
     size: 20,
   },
   {
-    accessorKey: "executiveTitle",
+    accessorKey: "municipalityRegionsTitle",
     header: REGION_TITLE,
+    size: 20,
+  },
+  {
+    accessorKey: "municipalityRegionsWeight",
+    header: WEIGHT,
     size: 20,
   },
 ];
